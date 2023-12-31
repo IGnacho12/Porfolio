@@ -1,0 +1,62 @@
+---
+import ButtonGray from "./ButtonGray.astro";
+import CardCoffe from "./CardCoffe.astro";
+---
+
+<div class="flex flex-col justify-center align-middle ml-64 mr-64">
+  <h1 class="font-DMS text-4xl text-center font-bold tracking-wide mb-2">
+    Nuestra Colección
+  </h1>
+
+  <p class="text-pretty font-DMS font-semibold text-gray-500 tracking-wide">
+    Presentamos nuestra Colección de Café, una selección de cafés únicos de
+    diferentes tipos de tostado y orígenes, tostados expertamente en pequeños
+    lotes y enviados frescos cada semana.
+  </p>
+
+  <div class="flex justify-center gap-5 mt-4">
+    <ButtonGray>Todos los productos</ButtonGray>
+
+    <ButtonGray>Disponible ahora</ButtonGray>
+  </div>
+</div>
+
+<div class="grid grid-cols-3 text-white 8xl gap-10 mt-7">
+  <CardCoffe>
+    <img slot="imagen" src="public/Cafe-1.jpg" alt="" />
+     Cappuchino
+  </CardCoffe>
+
+  <CardCoffe>
+    <img slot="imagen" src="public/Cafe-2.jpg" alt="" />
+     Expresso
+  </CardCoffe>
+
+  <CardCoffe>
+    <img slot="imagen" src="public/Cafe-3.jpg" alt="" />
+     Expresso
+  </CardCoffe>
+
+  <CardCoffe>
+    <img slot="imagen" src="public/Cafe-4.jpg" alt="" />
+     Expresso
+  </CardCoffe>
+
+  <CardCoffe>
+    <img slot="imagen" src="public/Cafe-5.jpg" alt="" />
+     Expresso
+  </CardCoffe>
+
+  <CardCoffe>
+    <img slot="imagen" src="public/Cafe-6.jpg" alt="" />
+     Expresso
+  </CardCoffe>
+</div>
+<style>
+  img {
+    object-fit: cover;
+    border-radius: 16px;
+    height: 200px;
+    width: 300px;
+  }
+</style>
