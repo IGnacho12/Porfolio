@@ -4,18 +4,18 @@
   <section class="flex justify-between mt-2">
     <h3 class="font-DMS font-semibold"><slot/></h3>
 
-    <span class="pt-0.5 pb0.5 pr-1 pl-1 rounded-md
+    <span class="pt-0.5 pb0.5 pr-1 pl-1 rounded-md font-bold font-DMS text-black
     bg-green-400/90">
-      $5.20
+      <slot name="price"/>
     </span>
   </section>
 
   <section class="flex gap-2 align-middle">
     <img class="size-7" src="public/Star.svg" alt="" />
 
-    <h4 class="font-bold">4.7</h4>
+    <h4 class="font-bold"><slot name="rating"/></h4>
 
-    <span class="text-gray-500"> (64 votos)</span>
+    <span class="text-gray-500"><slot name="votes"/></span>
   </section>
 </div>
 
